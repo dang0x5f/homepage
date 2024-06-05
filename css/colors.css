@@ -1,0 +1,58 @@
+html {
+  /* background-color: orange; */
+  background-image: url('../images/space.jpg');
+}
+
+body {
+  /* background-color: papayawhip; */
+  /* background-image: url('../images/space.jpg'); */
+}
+
+header {
+  /* background-color: sienna; */
+
+  background-image: url('../images/space.jpg');
+}
+
+h4 {
+  background-color: #eee;
+}
+
+aside > div > a {
+  /* color: forestgreen; */
+  color: #355e3b;
+}
+section > a,
+section > div > a {
+  color: forestgreen;
+}
+
+main {
+  /* background-color: blue; */
+
+  background-color: #ccc;
+}
+
+aside {
+  /* background-color: cyan; */
+
+  background-color: #ccc;
+}
+
+section {
+  /* background-color: khaki; */
+
+  background-color: #ccc;
+}
+
+button {
+  color: #fffaaa;
+  background-color: forestgreen;
+}
+
+footer {
+  /* background-color: lime; */
+
+  color: #fffaaa;
+  background-color: #222;
+}

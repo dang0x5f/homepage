@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffff00; background-color: #aaa; margin: 0; 
+  padding: 0; font-family: monospace;
+}
+
+header {
+  width: 100%;
+}
+header > img {
+  display: block; width: 100px; height: 100px; object-fit: fill; 
+  margin: 40px auto;
+}
+
+main { 
+  background-color: #aaa; 
+} 
+
+div#footer { 
+  max-width: 500px; color: #dddddd; 
+  margin: 20px auto; padding: 20px;
+}
+div#footer > ul {
+  list-style: none; margin: 0; padding: 10px; overflow: hidden; 
+  display: flex; flex-flow: row wrap; justify-content: space-evenly;
+}
+div#footer > ul > li {
+  float: left; 
+}
+div#footer > ul > li > a {
+  color: #111; text-decoration: none; padding: 2px;  /* */
+}
+div#footer > ul > li > a:hover {
+  border: 2px outset #ddd;
+}
+
+/* userlogin.html */
+
+form#login-form { 
+  width: 312px; margin: 0 auto; 
+  padding: 33px; border: 2px outset #ddd;
+}
+
+div.form-row {
+  font-size: 1.1em; display: block; width: 100%; 
+}
+div.form-row > label {
+  font-size: 0.95em; color: #111;
+}
+div.form-row > input {
+  width: 100%; 
+}
+div.form-row > input[type='text'], div.form-row > input[type='password'] {
+  padding: 5px 12px; margin: 4px 0 12px 0; font-family: inherit;
+}
+div.form-row > input[type='submit'] {
+  background-color: forestgreen; color: white; padding: 10px 0; 
+  margin: 10px 0; font-family: inherit;
+}
+div.form-row > input[type='submit']:focus {
+}
+
+div#create-account-div {
+  color: #111; width: 312px; border: 2px outset #ddd; 
+  text-align: center; padding: 20px; margin: 20px auto;
+}
+div#create-account-div > a {
+  color: darkgreen;
+}
+
+/* validateuser.php */
+
+div#welcome-user {
+  display: inline-block; color: #222; font-family: Courier, monospace;
+}
+div#welcome-user h2 {
+  overflow: hidden; border-right: 0.1em solid #222; 
+  white-space: nowrap; margin: 0 auto; font-weight: normal;
+  animation: typing 3.5s steps(20,end) forwards, 
+             blink-caret 0.75s step-end infinite; 
+}
+@keyframes typing {
+  from { width: 0;    }
+  to   { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #222; }
+}
+
+table#catalog-table {
+  font-family: Courier, monospace; border: 5px outset #000; 
+  margin: 40px auto 0 auto; 
+}
+table#catalog-table th {
+  background-color: #a6b6c9 ; padding: 5px; text-align: left;
+}
+table#catalog-table td {
+  padding: 3px 6px; max-width: 200px; vertical-align: top; 
+  background-color: #bbb;
+}
+table#catalog-table th, table#catalog-table td {
+  border: 3px inset #aaa; 
+}
+
+ul#nav-list {
+  display: flex; list-style: none; justify-content: end;
+}
+ul#nav-list li {
+  margin-right: 10px;
+}
+ul#nav-list li a {
+  color: darkgreen; padding: 8px; border: 2px outset #ddd;
+  text-decoration: none; letter-spacing: 1.05px; font-size: 1.1em;
+}
+ul#nav-list li a:hover {
+  border: 2px inset #ddd;
+}

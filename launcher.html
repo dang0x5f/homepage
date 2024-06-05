@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Home Page :)</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style></style>
+
+    <script>
+      function searchgoogle(){
+        let input = document.getElementById('google-txtbox').value
+        input = input.toLowerCase();
+        window.open(("https://www.google.com/search?q=" + input).replace(/ /g,"+"), "_blank");
+      }
+      function searchyoutube(){
+        let input = document.getElementById('youtube-txtbox').value
+        input = input.toLowerCase();
+        window.open(("https://www.youtube.com/results?search_query=" + input).replace(/ /g,"+"), "_blank");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header >
+      <a href="https://www.google.com" target="_blank"><img src="images/globe.gif" height="75px"></a>
+    </header>
+
+
+<!--
+      <aside>
+        <h4>Reference Manuals</h4>
+        <a href="https://pubs.opengroup.org/onlinepubs/9699919799/nframe.html" target="_blank">IEEE The Open Group</a>
+        <a href="https://en.cppreference.com/w/cpp" target="_blank">CPP reference</a>
+        <a href="https://love2d.org/wiki/love" target="_blank">Love2D Wiki</a>
+        <a href="https://xmonad.org/documentation.html" target="_blank">XMonad Doc</a>
+        <a href="https://www.haskell.org/documentation/" target="_blank">Haskell Doc</a>
+        <a href="https://www.php.net/docs.php" target="_blank">PHP Doc</a>
+        <a href="https://docs.oracle.com/javase/8/docs/api/allclasses-noframe.html" target="_blank">Java SE 8</a>
+        <a href="https://openjfx.io/javadoc/20/" target="_blank">JavaFX Doc</a>
+        <a href="#"><img src="wizard2.gif" height="100px" width="100px"></a>
+      </aside>
+
+      <main>
+
+        <div>
+
+          <h4>FreeBSD</h4>
+          <div>
+            <a href='https://www.freebsd.org/' target='_blank'>Home Page<img src="beastie.png" height="30px"></a>
+            <a href='https://docs.freebsd.org/en/books/handbook/' target='_blank'>Handbook<img src="beastie.png" height="30"></a>
+            <a href='https://docs.freebsd.org/en/books/developers-handbook/' target='_blank'>Dev Handbook<img src="beastie.png" height="30"></a>
+            <a href='https://www.freshports.org/' target='_blank'>Freshports<img src="beastie.png" height="30"></a>
+          </div>
+
+        </div>
+
+<section>
+  <h4>Table</h4>
+  <div id="tab">
+  <script>
+      document.getElementById("tab").innerHTML='<object type="text/html" data="table.html"></object>';
+  </script>
+  </div>
+</section>
+
+
+
+      </main>
+    </div>
+-->
+
+    <div id="container">
+
+      <aside>
+        <h4>Manuals</h4>
+        <div id="ref-flexbox">
+          <a href="https://pubs.opengroup.org/onlinepubs/9699919799/nframe.html" target="_blank">IEEE The Open Group</a>
+          <a href="https://en.cppreference.com/w/cpp" target="_blank">CPP reference</a>
+          <a href="https://love2d.org/wiki/love" target="_blank">Love2D Wiki</a>
+          <a href="https://xmonad.org/documentation.html" target="_blank">XMonad Doc</a>
+          <a href="https://www.haskell.org/documentation/" target="_blank">Haskell Doc</a>
+          <a href="https://www.php.net/docs.php" target="_blank">PHP Doc</a>
+          <a href="https://docs.oracle.com/javase/8/docs/api/allclasses-noframe.html" target="_blank">Java SE 8</a>
+          <a href="https://openjfx.io/javadoc/20/" target="_blank">JavaFX Doc</a>
+          <a href="#"><img src="images/wizard2.gif" height="100px" width="100px"></a>
+        </div>
+      </aside>
+
+      <main>
+
+        <div class="main-row">
+          <section id="quicklinks-section">
+            <h4>Quick Links</h4>
+
+            <div class="quicklink">
+              <img src="images/github.png" height="33px">
+              <br>
+              <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+
+            <div class="quicklink">
+              <img src="images/folder.png" height="33px">
+              <br>
+              <a href="file:///usr/home/dang" target="_blank">$HOME</a>
+            </div>
+
+            <div class="quicklink">
+              <img src="images/drive.png" height="33px">
+              <br>
+              <a href="https://drive.google.com/drive/u/0/home" target="_blank">Drive</a>
+            </div>
+
+          </section>
+
+          <section id="website-section">
+            <h4>Websites</h4>
+
+            <form>
+              <fieldset>
+                <legend>
+                  <a href="https://www.google.com" target="_blank"><img src="images/google-logo.png" height="25px" width="80px"></a>
+                </legend>
+                <input type="text" id="google-txtbox">
+                <button type="submit" onclick="searchgoogle()">Search</button>
+              </fieldset>
+            </form>
+
+            <hr>
+
+            <form>
+              <fieldset>
+                <legend>
+                  <a href="https://www.youtube.com" target="_blank"><img src="images/yt-logo.png" height="25px" width="80px"></a>
+                </legend>
+                <input type="text" id="youtube-txtbox">
+                <button type="submit" onclick="searchyoutube()">Search</button>
+              </fieldset>
+            </form>
+
+          </section>
+        </div>
+
+        <div class="main-row">
+          <section id="bsd-section">
+            <h4>FreeBSD</h4>
+            <a href='https://www.freebsd.org/' target='_blank'>Home Page<img src="images/beastie.png" height="30px"></a>
+            <a href='https://docs.freebsd.org/en/books/handbook/' target='_blank'>Handbook<img src="images/beastie.png" height="30"></a>
+            <a href='https://docs.freebsd.org/en/books/developers-handbook/' target='_blank'>Dev Handbook<img src="images/beastie.png" height="30"></a>
+            <a href='https://www.freshports.org/' target='_blank'>Freshports<img src="images/beastie.png" height="30"></a>
+          </section>
+        </div>
+
+        <div class="main-row">
+          <section>
+            <h4>h4 header 4</h4>
+            <p>paragraph in main , section</p>
+          </section>
+
+          <section>
+            <h4>h4 header 5</h4>
+            <p>paragraph in main , section</p>
+          </section>
+        </div>
+        <!-- <table> -->
+        <!--   <tr> -->
+        <!--     <td>data1</td> -->
+        <!--     <td>data2</td> -->
+        <!--   </tr> -->
+
+        <!--   <tr> -->
+        <!--     <td>data3</td> -->
+        <!--     <td>data4</td> -->
+        <!--   </tr> -->
+        <!-- </table> -->
+
+      </main>
+
+    </div>
+
+    <footer>
+      <script>
+        var date = document.lastModified;
+        document.write("Last Modified: " +date);
+      </script>
+    </footer>
+
+  </body>
+</html>
